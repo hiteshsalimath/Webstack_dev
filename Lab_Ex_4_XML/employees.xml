@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<employees>
+    <employee>
+      <personalInformation>
+        <firstName>John</firstName>
+        <lastName>Anthony</lastName>
+        <dateOfBirth>20-02-2003</dateOfBirth>
+        <gender>Male</gender>
+      </personalInformation>
+
+      <employmentInformation>
+        <position>Software Engineer</position>
+        <salary>90000</salary>
+      </employmentInformation>
+
+      <contactInformation>
+        <email>john.anthony@example.com</email>
+        <phoneNumber>9856214735</phoneNumber>
+      </contactInformation>
+    </employee>
+
+
+    <employee>
+      <personalInformation>
+        <firstName>Sai</firstName>
+        <lastName>Shivashree</lastName>
+        <dateOfBirth>26-05-2000</dateOfBirth>
+        <gender>Female</gender>
+      </personalInformation>
+
+      <employmentInformation>
+        <position>Marketing Specialist</position>
+        <salary>75000</salary>
+      </employmentInformation>
+
+      <contactInformation>
+        <email>sai.shivashree@example.com</email>
+        <phoneNumber>9876543210</phoneNumber>
+      </contactInformation>
+    </employee>
+
+
+    <employee>
+      <personalInformation>
+        <firstName>Mohammed</firstName>
+        <lastName>Shami</lastName>
+        <dateOfBirth>14-08-1998</dateOfBirth>
+        <gender>Male</gender>
+      </personalInformation>
+
+      <employmentInformation>
+        <position>Financial Analyst</position>
+        <salary>80000</salary>
+      </employmentInformation>
+
+      <contactInformation>
+        <email>mohammed.shami@example.com</email>
+        <phoneNumber>9551234567</phoneNumber>
+      </contactInformation>
+    </employee>
+
+
+</employees>
+  
+  
