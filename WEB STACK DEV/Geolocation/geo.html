@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="geostyles.css">
+    <title>maps</title>
+</head>
+<body>
+    
+    <h1 style="font-size: 100px; font-style: italic;">Welcome to Geonava Explorer!</h1>
+
+    <p class="center">
+        Are you ready to embark on an exciting journey through the vibrant streets, iconic landmarks, and hidden gems of our wonderful city? <br>
+        you're a local looking to rediscover your surroundings or a visitor eager to uncover new experiences, 
+        I'm here to be your virtual guide.<br>
+        Together, we'll navigate the bustling neighborhoods, discover top-notch dining spots, explore cultural treasures, and uncover the best-kept secrets that make [City Name] truly unique.
+        Let's get started by finding your current location, so we can tailor our adventure and ensure you have the most memorable exploration possible.
+    </p>
+
+    <div id="myMap" class= "Map-div"></div>
+    <script>
+        // This function initializes the map and adds a pushpin at a specific location.
+        function initMap() {
+            var map = new Microsoft.Maps.Map('#myMap', {
+                center: new Microsoft.Maps.Location(12.9263757, 77.607126), 
+                zoom: 10
+            });
+                
+            var pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), {
+                title: 'My Location',
+                subTitle: 'This is my location.'
+            });
+            
+            map.entities.push(pushpin);
+        }
+    </script>
+    
+    <script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?callback=initMap"></script>  
+</body>
+</html>

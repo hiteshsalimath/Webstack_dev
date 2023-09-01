@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(248, 229, 248);
+}
+img{
+    image-orientation: from-image;
+    align-items: center;
+}
+h1{
+    color: rgb(2, 14, 37);
+    text-align: center;
+    background-color: rgb(231, 252, 1);
+}
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color: rgb(2, 14, 37);
+}
+p{
+    text-align: center;
+}
+li,ul{
+    text-align: center;
+}

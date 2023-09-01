@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CD_Catlog>
+    <cd>
+        <type>Sony</type>
+        <size>2.4 GB</size>
+        <content>Thriller movies</content>
+        <price>250 rupees</price>
+        <compatible>Windows xp</compatible>
+        <language>Kannada</language>
+    </cd>
+    <cd>
+        <type>Cyberlink</type>
+        <size>1.2 GB</size>
+        <content>Music</content>
+        <price>120 rupees</price>
+        <compatible>Windows 7</compatible>
+        <language>Hindi</language>
+    </cd>
+    <cd>
+        <type>Mozorell</type>
+        <size>128Kb</size>
+        <content>Adobe installer</content>
+        <price>1120 rupees</price>
+        <compatible>Windows 8</compatible>
+        <language>English</language>
+    </cd>
+    <cd>
+        <type>Sony DADC</type>
+        <size>1.5 GB</size>
+        <content>Pictures</content>
+        <price>280 rupees</price>
+        <compatible>Windows 10</compatible>
+        <language>.Png</language>
+    </cd>
+    <cd>
+        <type>Technicore</type>
+        <size>1.2 GB</size>
+        <content>Horror movies</content>
+        <price>220 rupees</price>
+        <compatible>Windows 10.1</compatible>
+        <language>Tamil</language>
+    </cd>
+</CD_Catlog>

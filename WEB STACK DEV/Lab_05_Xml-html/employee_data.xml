@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+  <employee>
+    <name>Ramesh Arvind</name>
+    <dob>1979-05-13</dob>
+    <service>15 years</service>
+    <position>Software Engineer</position>
+    <salary>30000</salary>
+  </employee>
+  <employee>
+    <name>M S Dhoni</name>
+    <dob>1988-11-28</dob>
+    <service>25 years</service>
+    <position>Project Manager</position>
+    <salary>55000</salary>
+  </employee>
+  <employee>
+    <name>Smriti Mandanna</name>
+    <dob>1986-01-26</dob>
+    <service>5 years</service>
+    <position>Project Lead</position>
+    <salary>95000</salary>
+  </employee>
+  <employee>
+    <name>shefali varma</name>
+    <dob>1968-09-08</dob>
+    <service>8 years</service>
+    <position>HR Manager</position>
+    <salary>65000</salary>
+  </employee>
+  <employee>
+    <name>Yuzivendra Chahal</name>
+    <dob>1972-12-30</dob>
+    <service>13 years</service>
+    <position>Assistant Manager</position>
+    <salary>35000</salary>
+  </employee>
+  <employee>
+    <name>Alice Johnson</name>
+    <dob>1985-06-15</dob>
+    <service>8 years</service>
+    <position>Senior Developer</position>
+    <salary>60000</salary>
+</employee>
+<employee>
+    <name>Bob Smith</name>
+    <dob>1990-03-20</dob>
+    <service>5 years</service>
+    <position>Marketing Specialist</position>
+    <salary>45000</salary>
+</employee>
+</employees>
