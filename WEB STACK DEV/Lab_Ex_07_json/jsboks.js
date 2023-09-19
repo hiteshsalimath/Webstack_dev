@@ -1,47 +1,39 @@
-// Define a function to fetch and display books
-function fetchAndDisplayBooks() {
-    const xhr = new XMLHttpRequest();
+// let httpRequest;
+const httpRequest = new XMLHttpRequest();
+const url =
+  'https://raw.githubusercontent.com/Punithify/punithify.github.io/main/Data/books.json';
+document.getElementById('ajax').addEventListener('click',function(){
+    makeRequest(url);
+});
 
-    // Replace 'books.json' with your API URL if needed
-    const apiUrl = 'books.json';
-
-    xhr.open('GET', apiUrl, true);
-
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            const books = JSON.parse(xhr.responseText);
-            displayBooks(books);
-        } else {
-            console.error('Failed to fetch books');
-        }
-    };
-
-    xhr.onerror = function () {
-        console.error('Network error occurred');
-    };
-
-    xhr.send();
+function makeRequest(url) {
+  httpRequest.onreadystatechange = alertContents;
+  httpRequest.open('GET', url, true);
+  httpRequest.send();
 }
 
-// Define a function to display the list of books
-function displayBooks(books) {
-    const bookListDiv = document.getElementById('bookList');
-    bookListDiv.innerHTML = ''; // Clear previous content
-
-    if (books.length === 0) {
-        bookListDiv.textContent = 'No books found.';
-        return;
+function alertContents() {
+  if (httpRequest.readyState === XMLHttpRequest.DONE) {
+    if (httpRequest.status === 200) {
+      const response = JSON.parse(httpRequest.responseText);
+      console.log(response);
+      response.map(
+        (book) =>
+          (document.getElementById(
+            'bookList'
+          ).innerHTML += `<div class="card ml-4" style="width: 18rem;">
+      <img src="${book.imageLink}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3>${book.title}</h3>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="${book.link}">book link</a>
+      </div>
+    </div>`)
+      );
+    } else {
+      alert('There was a problem with the request.');
     }
-
-    const ul = document.createElement('ul');
-    books.forEach((book) => {
-        const li = document.createElement('li');
-        li.textContent = `${book.title} by ${book.author}`;
-        ul.appendChild(li);
-    });
-
-    bookListDiv.appendChild(ul);
+  }
 }
 
-// Add a click event listener to the "Fetch Books" button
-document.getElementById('fetchBooks').addEventListener('click', fetchAndDisplayBooks);
+console.log('hello', httpRequest.responseText);
