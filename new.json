@@ -1,0 +1,9 @@
+{
+    "name" : "Anupam",
+    "age": 21,
+    "skills": ["html","css","js"],
+    "address": {
+        "city": "Bengaluru",
+        "state": "Karnataka"
+    }
+}
