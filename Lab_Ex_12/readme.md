@@ -1,9 +1,3 @@
-# Posts fs module nodejs
-
-```bash
- git clone https://github.com/Punithify/Q12-fs-posts-node.git
-```
-
 ## Commands for CRUD
 
 ```bash
